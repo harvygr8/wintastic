@@ -16,7 +16,7 @@
 ```js
 const wintastic = require('wintastic');
 
-const res = wintastic.getUserAccounts()
+const res = wintastic.getUserAccount()
 .then((res) => console.log(res))
 .catch((err)=>console.error(err));
 ```
