@@ -23,7 +23,7 @@ const res = wintastic.getUserAccounts()
 
 - Get Windows OS Information
 ```js
-const res = wintastic.WindowsInfo()
+const res = wintastic.getWindowsInfo()
 .then((res) => console.log(res))
 .catch((err)=>console.error(err));
 ```
