@@ -2,7 +2,7 @@
  NPM package that gives various information about the underlying windows OS.
 
 # About
- Wintastic is a windows only npm package made in typescript that gives information about various aspects of your windows OS , including User accounts , Startup Programs , and Other OS-related info in a structured manner.
+ Wintastic is a windows only npm package made in typescript that gives information about various aspects of your windows OS , including user accounts , startup programs , and other OS-related info in a structured manner.
 
 
 # Installation
