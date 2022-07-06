@@ -14,5 +14,9 @@
   "license": "ISC",
   "dependencies": {
     "@types/node": "^18.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/harvygr8/wintastic"
+  },
 }
