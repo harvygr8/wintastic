@@ -12,26 +12,48 @@
  ```
 
 # Usage Examples
-- Get all the user accounts
+
+- Get a list of all the startup programs along with the path and the user
 ```js
 const wintastic = require('wintastic');
 
+const res = wintastic.getStartupCommand()
+.then((res) => console.log(res))
+.catch((err)=>console.error(err));
+/* Sample Output
+  {
+    caption: 'OneDrive',
+    command: '"C:\\Users\\Admin\\AppData\\Local\\Microsoft\\OneDrive\\OneDrive.exe" /background',
+    user: 'Admin'
+  },
+  {
+    caption: 'Steam',
+    command: '"C:\\Program Files (x86)\\Steam\\steam.exe" -silent',
+    user: 'Admin'
+  },
+  {
+    caption: 'MySQL Notifier',
+    command: 'C:\\Program Files (x86)\\MySQL\\MySQL Notifier 1.1\\MySqlNotifier.exe',
+    user: 'Admin'
+  },
+  {
+    ...
+  },
+  ...
+*/
+```
+- Get information related to all user accounts like SID , Account type , etc.
+```js
 const res = wintastic.getUserAccount()
 .then((res) => console.log(res))
 .catch((err)=>console.error(err));
 ```
 
-- Get OS information
+- Get OS related information like version , build number , last boot time , install date , etc.
 ```js
 const res = wintastic.getWindowsInfo()
 .then((res) => console.log(res))
 .catch((err)=>console.error(err));
 ```
 
-- Get a list of all the startup programs
-```js
-const res = wintastic.getStartupCommand()
-.then((res) => console.log(res))
-.catch((err)=>console.error(err));
-```
 
